@@ -1,0 +1,16 @@
+code=input()
+r= int(code[0:2],16)
+g=int(code[2:4],16)
+b=int(code[4:6],16)
+if code=='000000':
+  print('черный')
+elif code=='ffffff':
+  print('белый')
+elif r==g==b:
+  print('серый')
+elif t>=g and r>=b:
+  print('красный')
+elif g>=b:
+  print('зеленый')
+else:
+  print('синий')
